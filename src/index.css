@@ -1,0 +1,136 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background:#3498db;
+}
+.App{
+  margin:40px auto;
+  width:540px;
+  padding: 20px;
+  max-height: 540px;
+  background:#fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 4px 22px -4px rgba(255,255,255,0.82); 
+  box-shadow: 0px 4px 22px -4px rgba(255,255,255,0.82);
+  overflow-y:auto;
+}
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height:100px
+}
+.input input{
+  width:380px;
+  border:none;
+  outline: none;
+  background:#000;
+  color:#fff;
+  height:40px;
+  padding: 20px;
+  border-radius:1rem;
+  font-size: 18px;
+}
+input:focus{
+  border: 2px solid #2980b9;
+}
+.input .btn{
+  width:90px;
+  height: 40px;
+  color:#000;
+  background:#fff;
+  border:1px solid #2ecc71;
+  font-size: 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.input .btn:hover{
+  background:#2ecc71;
+  color:#fff
+}
+
+.todos{
+  width: 500px;
+  height: auto;
+  margin-top:20px
+}
+.list{
+  width:100%;
+  list-style: none;
+  height:50px;
+  background:#ddd;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  padding: 0 20px;
+  transition: 300ms;
+}
+.list.ok{
+  background:#2ecc71;
+}
+.list.ok p{
+  text-decoration: line-through;
+  color:#fff
+}
+.list p{
+  font-size: 18px;
+  line-height: 50px;
+  width:360px;
+  overflow: auto;
+  display: inline-block;
+}
+.buttons{
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.buttons button{
+  background-color: #ddd;
+  font-size: 35px;
+  border: none;
+  cursor: pointer;
+}
+.done{
+  margin-right: 10px;
+  color: #2ecc71;
+  border-radius: 5px;
+}
+.done:hover{
+  color: #08a047;
+  transform: scale(1.1);
+}
+.delete{
+  color: #e74c3c;
+  border-radius: 5px;
+}
+.delete:hover{
+  color:#c02716;
+  transform: scale(1.1);
+}
+
+.clearButtons{
+  display: flex;
+}
+.clear{
+  width:100px;
+  height:35px;
+  color:#fff;
+  background-color: #e74c3c;
+  border: none;
+  outline: none;
+  margin-right: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  display:none;
+}
+.clear:hover{
+  background-color: #c02716;
+}
+.clear.active{
+  display: block;
+}
+
